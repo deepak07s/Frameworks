@@ -1,5 +1,7 @@
 package keywordFramework;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,6 +30,7 @@ public class Keyword {
 	public static void getURL(String sURL) {
 			Constants.driver.get(sURL);
 			Constants.driver.manage().window().maximize();
+			Constants.driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS);
 	}
 
 	public static void enterText(String lType, String lValue, String textEnter){
@@ -77,6 +80,9 @@ public class Keyword {
 		return textString;
 	}
 
+	public static void navigateBack() {
+		Constants.driver.navigate().back();
+	}
 	public static void closeBrowser() {
 		Constants.driver.quit();
 	}
