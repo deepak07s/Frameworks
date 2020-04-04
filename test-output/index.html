@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="keywordFramework.TestClass" hash-for-method="Test8">Test8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +133,21 @@
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="keywordFramework.TestClass" hash-for-method="Test4">Test4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="keywordFramework.TestClass" hash-for-method="Test5">Test5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="keywordFramework.TestClass" hash-for-method="Test6">Test6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="keywordFramework.TestClass" hash-for-method="Test7">Test7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -131,6 +160,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">keywordFramework.TestClass</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test8">
+                  </a> <!-- Test8 -->
+                  <span class="method-name">Test8</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at keywordFramework.TestClass.Test8(TestClass.java:123)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -163,6 +211,27 @@
                   <a name="Test4">
                   </a> <!-- Test4 -->
                   <span class="method-name">Test4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test5">
+                  </a> <!-- Test5 -->
+                  <span class="method-name">Test5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test6">
+                  </a> <!-- Test6 -->
+                  <span class="method-name">Test6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Test7">
+                  </a> <!-- Test7 -->
+                  <span class="method-name">Test7</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,28 +288,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test2')
+data.setCell(0, 1, 'Test6')
 data.setCell(0, 2, 'keywordFramework.TestClass')
-data.setCell(0, 3, 2036);
+data.setCell(0, 3, 3086);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Test1')
+data.setCell(1, 1, 'Test7')
 data.setCell(1, 2, 'keywordFramework.TestClass')
-data.setCell(1, 3, 1544);
+data.setCell(1, 3, 2996);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Test4')
+data.setCell(2, 1, 'Test5')
 data.setCell(2, 2, 'keywordFramework.TestClass')
-data.setCell(2, 3, 1541);
+data.setCell(2, 3, 2915);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Test3')
+data.setCell(3, 1, 'Test2')
 data.setCell(3, 2, 'keywordFramework.TestClass')
-data.setCell(3, 3, 1199);
+data.setCell(3, 3, 2262);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Test4')
+data.setCell(4, 2, 'keywordFramework.TestClass')
+data.setCell(4, 3, 1639);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Test3')
+data.setCell(5, 2, 'keywordFramework.TestClass')
+data.setCell(5, 3, 1395);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Test1')
+data.setCell(6, 2, 'keywordFramework.TestClass')
+data.setCell(6, 3, 1262);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Test8')
+data.setCell(7, 2, 'keywordFramework.TestClass')
+data.setCell(7, 3, 451);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -273,23 +358,41 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">Test1</span>
-                <span class="method-start">7737 ms</span>
+                <span class="method-start">9223 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test2</span>
-                <span class="method-start">9285 ms</span>
+                <span class="method-start">10488 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test3</span>
-                <span class="method-start">11323 ms</span>
+                <span class="method-start">12753 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Test4</span>
-                <span class="method-start">12523 ms</span>
+                <span class="method-start">14151 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test5</span>
+                <span class="method-start">15792 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test6</span>
+                <span class="method-start">18709 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Test7</span>
+                <span class="method-start">21799 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Test8</span>
+                <span class="method-start">24883 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">14068 ms</span>
+                <span class="method-start">25346 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

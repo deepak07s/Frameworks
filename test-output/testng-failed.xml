@@ -5,9 +5,9 @@
     <classes>
       <class name="keywordFramework.TestClass">
         <methods>
+          <include name="Test8"/>
           <include name="openBrowser"/>
           <include name="closeBrowser"/>
-          <include name="Test4"/>
         </methods>
       </class> <!-- keywordFramework.TestClass -->
     </classes>

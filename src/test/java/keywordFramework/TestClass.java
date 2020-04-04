@@ -80,10 +80,51 @@ public class TestClass {
 			exist = false;
 		}
 	}
-
+	
+	//To verify that after clicking on Sign In button, Sign In page should be display
+	@Test
+	public void Test5() {
+		Keyword.mouseHoverSpecificElement(Property.getProperty("signIn"));
+		Keyword.clickOnElement(Property.getProperty("signInButton"));
+		String expectedTitle="Amazon Sign In";
+		String actualTitle=Constants.driver.getTitle();
+		Assert.assertEquals(actualTitle, expectedTitle);
+	}
+	//To verify that after entering the email and click on Continue button then it accept the email and password text field should be display.
+	@Test
+	public void Test6() {
+		
+		Keyword.enterText(Property.getProperty("email"),"deepak@gmail.com");
+		Keyword.clickOnElement(Property.getProperty("continueButton"));
+		Boolean elementPresent=Keyword.elementPresent(Property.getProperty("pwdElementText"));
+		Assert.assertTrue(elementPresent);
+		Keyword.getURL(Property.getProperty("url"));
+	}
+	
+	//To verify that after entering any text in search field and click on search button then the title of the page becomes Amazon.in:<search text>
+	@Test
+	public void Test7() {
+		
+		String srchText="Mobile";
+		Keyword.enterText(Property.getProperty("srchFild"),srchText);
+		Keyword.clickOnElement(Property.getProperty("srchBtn"));
+		String expectedTitle="Amazon.in : "+srchText;
+		String actualTitle=Constants.driver.getTitle();
+		
+		Assert.assertEquals(actualTitle, expectedTitle);
+	}
+	
+	//To verify the particular value present in Search In drop down
+	@Test
+	public void Test8() {
+		String srchValDropdown="Deal";
+		Keyword.clickOnElement(Property.getProperty("srchDropdwon"));
+		Boolean valPresent=Keyword.verifyElementPresentDropdown(Property.getProperty("srchDropdwon"), srchValDropdown);
+		Assert.assertTrue(valPresent);
+	}
 	@AfterTest
 	public void closeBrowser() {
-		Keyword.closeBrowser();
+		//Keyword.closeBrowser();
 	}
 
 }
