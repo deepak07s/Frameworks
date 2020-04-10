@@ -4,7 +4,7 @@
   <artifactId>KeywordDriven</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
-		<!-- <dependency> <groupId>org.seleniumhq.selenium</groupId> <artifactId>selenium-server</artifactId> 
+		<!-- <dependency> <groupId>org.seleniumhq.seleniumss</groupId> <artifactId>selenium-server</artifactId> 
 			<version>3.14.0</version> </dependency> -->
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>

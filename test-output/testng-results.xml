@@ -2,44 +2,44 @@
 <testng-results skipped="0" failed="1" total="8" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="25346" started-at="2020-04-04T09:24:35Z" finished-at="2020-04-04T09:25:01Z">
+  <suite name="Default suite" duration-ms="45084" started-at="2020-04-08T15:39:21Z" finished-at="2020-04-08T15:40:06Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="25346" started-at="2020-04-04T09:24:35Z" finished-at="2020-04-04T09:25:01Z">
+    <test name="Default test" duration-ms="45084" started-at="2020-04-08T15:39:21Z" finished-at="2020-04-08T15:40:06Z">
       <class name="keywordFramework.TestClass">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="openBrowser" is-config="true" duration-ms="9203" started-at="2020-04-04T02:24:35Z" finished-at="2020-04-04T02:24:45Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="openBrowser" is-config="true" duration-ms="16689" started-at="2020-04-08T08:39:21Z" finished-at="2020-04-08T08:39:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="Test1()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test1" duration-ms="1262" started-at="2020-04-04T02:24:45Z" finished-at="2020-04-04T02:24:46Z">
+        <test-method status="PASS" signature="Test1()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test1" duration-ms="6427" started-at="2020-04-08T08:39:37Z" finished-at="2020-04-08T08:39:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method status="PASS" signature="Test2()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test2" duration-ms="2262" started-at="2020-04-04T02:24:46Z" finished-at="2020-04-04T02:24:48Z">
+        <test-method status="PASS" signature="Test2()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test2" duration-ms="4316" started-at="2020-04-08T08:39:44Z" finished-at="2020-04-08T08:39:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test2 -->
-        <test-method status="PASS" signature="Test3()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test3" duration-ms="1395" started-at="2020-04-04T02:24:48Z" finished-at="2020-04-04T02:24:50Z">
+        <test-method status="PASS" signature="Test3()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test3" duration-ms="1559" started-at="2020-04-08T08:39:48Z" finished-at="2020-04-08T08:39:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test3 -->
-        <test-method status="PASS" signature="Test4()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test4" duration-ms="1639" started-at="2020-04-04T02:24:50Z" finished-at="2020-04-04T02:24:51Z">
+        <test-method status="PASS" signature="Test4()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test4" duration-ms="2032" started-at="2020-04-08T08:39:50Z" finished-at="2020-04-08T08:39:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test4 -->
-        <test-method status="PASS" signature="Test5()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test5" duration-ms="2915" started-at="2020-04-04T02:24:51Z" finished-at="2020-04-04T02:24:54Z">
+        <test-method status="PASS" signature="Test5()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test5" duration-ms="1978" started-at="2020-04-08T08:39:52Z" finished-at="2020-04-08T08:39:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test5 -->
-        <test-method status="PASS" signature="Test6()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test6" duration-ms="3086" started-at="2020-04-04T02:24:54Z" finished-at="2020-04-04T02:24:57Z">
+        <test-method status="PASS" signature="Test6()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test6" duration-ms="4501" started-at="2020-04-08T08:39:54Z" finished-at="2020-04-08T08:39:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test6 -->
-        <test-method status="PASS" signature="Test7()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test7" duration-ms="2996" started-at="2020-04-04T02:24:57Z" finished-at="2020-04-04T02:25:00Z">
+        <test-method status="PASS" signature="Test7()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test7" duration-ms="6894" started-at="2020-04-08T08:39:58Z" finished-at="2020-04-08T08:40:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test7 -->
-        <test-method status="FAIL" signature="Test8()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test8" duration-ms="451" started-at="2020-04-04T02:25:00Z" finished-at="2020-04-04T02:25:01Z">
+        <test-method status="FAIL" signature="Test8()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="Test8" duration-ms="608" started-at="2020-04-08T08:40:05Z" finished-at="2020-04-08T08:40:06Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -81,11 +81,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test8 -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2020-04-04T02:25:01Z" finished-at="2020-04-04T02:25:01Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:keywordFramework.TestClass@735b5592]" name="closeBrowser" is-config="true" duration-ms="1" started-at="2020-04-08T08:40:06Z" finished-at="2020-04-08T08:40:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- keywordFramework.TestClass -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
